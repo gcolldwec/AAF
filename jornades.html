@@ -29,13 +29,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-5 text-nowrap  d-flex align-items-center">
                     <li class="nav-item active">
-                    <a id="a" class="nav-link text-decoration-none" href="/index.html">Home</a>
+                    <a id="a" class="nav-link text-decoration-none  text-light" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a id="a" class="text-decoration-none" href="/travesses.html">Travesses</a></li>
+                        <a id="a" class="text-decoration-none  text-light" href="/travesses.html">Travesses</a></li>
                     </li>
-                    <li class="nav-item active">
-                        <a id="a" class="text-decoration-none text-light" href="#">Jornades</a></li>
+                    <li class="nav-item">
+                        <a id="a" class="text-decoration-none text-light" href="/jornades.html">La Liga</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <a id="a" class="text-decoration-none text-light" href="/jornadesFem.html">Finetwork Liga F</a></li>
                     </li>
                     <li class="nav-item mx-5">
                         <div class="row">
@@ -61,45 +64,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-10 mt-5 ">
+                <div class="col-xl-10 mt-5" id="contingut">
                     <div class="row">
-                        <div class="col-12 mb-2 text-center">
-                            <h2>Jornades</h2>
-                        </div>
-                        <div class="col-12">
+                        <div class="col-2"></div>
+                        <div class="col-8 my-3">
                             <div class="row">
-                                <div class="col-12 d-flex justify-content-center my-3">
-                                    <h3>Jornada 1</h3>
-                                </div>
-                                <div class="col-3"></div>
-                                <div class="col-3 my-3">
-                                    <div class="row">
-                                        <div class="col-2">
-                                            <h4 class="mx-5">Masculina</h4>
-                                        </div>
-                                        <div class="col-12">
-                                            <div id="jornadaMasc"></div>
-                                        </div>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-2">
+                                        <img id="logo_laliga" src="/imatges/laliga.png" alt="la liga" >
+                                    </div>
+                                    <div class="col-8">
+                                        <h1 class="mx-5 text-center text-nowrap">Primera divisió Masculina</h1>
                                     </div>
                                 </div>
-                                <div class="col-3 my-3">
-                                    <div class="row d-flex justify-content-center">
-                                        <div class="col-12">
-                                            <h4>Femenina</h4>
-                                        </div>
-                                        <div class="col-12">
-                                            <div id="jornadaFem"></div> 
-                                        </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <div id="jornadaMasc"></div>
                                     </div>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="footer d-flex justify-content-center mt-2">
+    <footer class="footer d-flex justify-content-center mt-2 fixed-bottom">
         <div class="row copy">
             <div class="col-12">
                 <p class="copyright">&copy; 2023 Associació d'amics del futbol</p>

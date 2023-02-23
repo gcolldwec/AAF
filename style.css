@@ -4,7 +4,8 @@
     font-family: 'Josefin Sans';
 }
 #capçelera{
-    background-color: rgba(218, 208, 163, 0.581);
+    background-color: rgb(133, 184, 114);
+    z-index: 1;
 }
 #picTitol{
     height: 18vh;
@@ -27,14 +28,26 @@
     width: 100%;
 }
 .navbar {
-    background-color: rgb(219, 171, 98);
+    background-color: rgb(3, 15, 3);
+    z-index: 1;
 }
 #aside {
-    background-color:  rgba(218, 208, 163, 0.581);
+    background-color:  rgba(180, 220, 142, 0.581);
+    position: absolute;
+    height: 100%;
+    z-index: 1;
 }
 .footer {
     padding: 20px 0;
-    background-color: rgb(219, 171, 98);
+    background-color:  rgba(84, 126, 69, 0.581);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    text-align: center;
+    z-index: 1;
 }
 
 img {
@@ -42,16 +55,125 @@ img {
 }
 
 #jornadaMasc {
-    background-color: rgb(219, 226, 231);
-    text-align: center;
+    background-color: rgb(244, 249, 241);
     border-radius: 10px;
     padding: 10px 0;
     font-size: large;
+    width: 500px;
 }
 #jornadaFem {
-    background-color: rgb(198, 210, 64);
-    text-align: center;
+    background-color: rgb(247, 249, 241);
     border-radius: 10px;
     padding: 10px 0;
     font-size: large;
+    width: 500px;
 }
+#local {
+    text-align: center;
+}
+#empat {
+    text-align: center;
+}
+#visitant {
+    text-align: center;
+}
+.resultat {
+    text-align: center;
+}
+
+#contingut {
+    position: relative;
+    margin-left: 250px;
+    margin-bottom: 55px;
+}
+#botoJornada {
+    border-radius: 5px;
+    border: 1px solid rgb(29, 88, 30);
+    padding: 5px 10px;
+}
+#botoJornada:hover {
+    background-color: rgb(224, 240, 159);
+}
+#mostrarResultats {
+    border-radius: 5px;
+    border: 1px solid rgb(29, 88, 30);
+    padding: 5px 10px;
+}
+#mostrarResultats:hover {
+    background-color: rgb(224, 240, 159);
+}
+
+#equipCasa {
+    margin-left: 30px;
+    margin-right: 20px; 
+    display: inline-flex;
+    justify-content: start;
+    font-size: 22px;
+}
+#equipVisitant {
+    display: inline-flex;
+    justify-content: end;
+    margin-left: 20px;
+    font-size: 22px;
+}
+#guio {
+    display: inline-flex;
+    justify-content: center;
+}
+#nombrePartit {
+    margin-left: 50px;
+}
+#logo_laliga {
+    height: 16vh;
+}
+#labelTravessa {
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(247, 250, 253);
+    padding: 2.5px 0;
+    padding-left: 20px;
+}
+#selectJornada {
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 2.5px 0;
+}
+.titolJornada {
+    padding: 10px 0;
+}
+.aposta {
+    border: 1px solid black;
+}
+.aposta.seleccionada {
+    border: 1px solid black;
+    background-color: rgb(29, 88, 30);
+    color: white;
+}
+.bet:hover {
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.bet.seleccionada {
+    border: 1px solid black;
+    background-color: rgb(29, 88, 30);
+    color: white;
+}
+.llegenda {
+    background-color: rgba(223, 214, 214, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+}
+.correcte {
+    background-color: green;
+    color: white;
+}
+.error {
+    background-color: red;
+    color: white;
+}
+
+
