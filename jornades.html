@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFF</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/imatges/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/imatges/general/logo.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <div class="container-fluid" id="capçelera">
             <div class="row d-flex align-items-center" id="fila">
                 <div class="col-2" id="col">
-                    <img id="picTitol" src="/imatges/logo1.png" alt="foto titol">
+                    <img id="picTitol" src="/imatges/general/logo1.png" alt="foto titol">
                 </div>
                 <div class="col-8 d-flex justify-content-center" id="col1">
                     <h1 id="titol">AV Amics del Futbol</h1>
@@ -57,30 +58,74 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-2" id="aside">
-                    <div class="row">
-                        <div class="col-12">
-                            
+                <div class="col-2" id="aside">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 mt-5 d-flex justify-content-center" >
+                            <label for="">Seleccioni jornada:</label><br>
                         </div>
+                        <select class="col-8" name="selectJornada" id="selectJornadaMasc">
+                            <option>--Seleccioni--</option>
+                            <option value="0">Totes les jornades</option>
+                            <option value="1">Jornada 1</option>
+                            <option value="2">Jornada 2</option>
+                            <option value="3">Jornada 3</option>
+                            <option value="4">Jornada 4</option>
+                            <option value="5">Jornada 5</option>
+                            <option value="6">Jornada 6</option>
+                            <option value="7">Jornada 7</option>
+                            <option value="8">Jornada 8</option>
+                            <option value="9">Jornada 9</option>
+                            <option value="10">Jornada 10</option>
+                            <option value="11">Jornada 11</option>
+                            <option value="12">Jornada 12</option>
+                            <option value="13">Jornada 13</option>
+                            <option value="14">Jornada 14</option>
+                            <option value="15">Jornada 15</option>
+                            <option value="16">Jornada 16</option>
+                            <option value="17">Jornada 17</option>
+                            <option value="18">Jornada 18</option>
+                            <option value="19">Jornada 19</option>
+                            <option value="20">Jornada 20</option>
+                            <option value="21">Jornada 21</option>
+                            <option value="22">Jornada 22</option>
+                            <option value="23">Jornada 23</option>
+                            <option value="24">Jornada 24</option>
+                            <option value="25">Jornada 25</option>
+                            <option value="26">Jornada 26</option>
+                            <option value="27">Jornada 27</option>
+                            <option value="28">Jornada 28</option>
+                            <option value="29">Jornada 29</option>
+                            <option value="30">Jornada 30</option>
+                            <option value="31">Jornada 31</option>
+                            <option value="32">Jornada 32</option>
+                            <option value="33">Jornada 33</option>
+                            <option value="34">Jornada 34</option>
+                            <option value="35">Jornada 35</option>
+                            <option value="36">Jornada 36</option>
+                            <option value="37">Jornada 37</option>
+                            <option value="38">Jornada 38</option>
+                        </select>   
                     </div>
                 </div>
-                <div class="col-xl-10 mt-5" id="contingut">
+                <div class="col-9 mt-5" id="contingut">
                     <div class="row">
                         <div class="col-2"></div>
-                        <div class="col-8 my-3">
-                            <div class="row">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-2">
-                                        <img id="logo_laliga" src="/imatges/laliga.png" alt="la liga" >
-                                    </div>
-                                    <div class="col-8">
-                                        <h1 class="mx-5 text-center text-nowrap">Primera divisió Masculina</h1>
-                                    </div>
+                        <div class="col-9 my-3">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-2">
+                                    <img id="logo_laliga" src="/imatges/general/laliga.png" alt="la liga" >
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 d-flex justify-content-center">
-                                        <div id="jornadaMasc"></div>
-                                    </div>
+                                <div class="col-8">
+                                    <h1 class="mx-5 text-center text-nowrap">Primera divisió Masculina</h1>
+                                </div>
+                            </div>
+                            
+                            <div class="row d-flex justify-content-center mt-5">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div id="jornadaNombre"></div>
+                                </div>
+                                <div class="col-9 d-flex justify-content-center">
+                                    <div id="jornadaMasc"></div>
                                 </div>
                             </div>
                         </div>
@@ -97,6 +142,6 @@
         </div>
     </footer>
 
-    <script src="script1.js"></script>
+    <script src="script_jornades.js"></script>
 </body>
 </html>

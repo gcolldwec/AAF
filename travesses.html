@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFF</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/imatges/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/imatges/general/logo.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="script_dades.js"></script>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <div class="container-fluid" id="capçelera">
             <div class="row d-flex align-items-center" id="fila">
                 <div class="col-2" id="col">
-                    <img id="picTitol" src="/imatges/logo1.png" alt="foto titol">
+                    <img id="picTitol" src="/imatges/general/logo1.png" alt="foto titol">
                 </div>
                 <div class="col-8 d-flex justify-content-center" id="col1">
                     <h1 id="titol">AV Amics del Futbol</h1>
@@ -63,7 +64,7 @@
                         <div class="col-12">
                             <div class="row mt-5">
                                 <div class="col-12  text-center">
-                                    <button id="botoJornada" >Jornada 1</button>
+                                    <button id="botoJornada" >Crear Jornada</button>
                                 </div>
                             </div>
                         </div>
@@ -77,6 +78,7 @@
                         <div class="col-8" id="labelTravessa">
                             <label for="">Seleccioni la jornada que vol jugar</label>
                             <select name="selectJornada" id="selectJornada">
+                                <option>--Seleccioni--</option>
                                 <option value="1">Jornada 1</option>
                                 <option value="2">Jornada 2</option>
                                 <option value="3">Jornada 3</option>
@@ -90,6 +92,12 @@
                                 <option value="11">Jornada 11</option>
                                 <option value="12">Jornada 12</option>
                                 <option value="13">Jornada 13</option>
+                                <option value="14">Jornada 14</option>
+                                <option value="15">Jornada 15</option>
+                                <option value="16">Jornada 16</option>
+                                <option value="17">Jornada 17</option>
+                                <option value="18">Jornada 18</option>
+                                <option value="19">Jornada 19</option>
                             </select>
                         </div>
                         <div class="col-12 mt-4">
@@ -98,14 +106,12 @@
                                     <li>
                                         <div class="aposta">
                                             <small>N/A</small>
-                                        </div>
-                                        
+                                        </div>  
                                     </li>
                                     <li>
                                         <div class="aposta seleccionada">
                                             <small>Seleccionat</small>
                                         </div>
-                
                                     </li>
                                 </ul>
                             </div>
@@ -115,14 +121,11 @@
                                     <small id="contador"></small>
                                 </div>
                             </div>
-                            <div id="travessa">
-                                
-                            </div>
+                            <div id="travessa"></div>
                             <div id="encerts"></div>
                             <div class="row mt-5">
-                                <div class="col-12  text-center">
-                                    <button id="mostrarResultats" >Resultats</button>
-                                </div>
+                                <div class="col-12  text-center" id="mostrarResultats"></div>
+                                <div class="col-12  text-center" id="mostrarResultatsApi"></div>
                             </div>
                         </div>
                     </div>
